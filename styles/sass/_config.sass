@@ -1,0 +1,101 @@
+* 
+  box-sizing: border-box
+
+html
+  scroll-behavior: smooth
+  background: linear-gradient(150.64deg, #8E2DE2 0%, #4A00E0 100%)
+
+.container 
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  max-width: 768px
+  min-height: calc(100vh - 80px)
+  margin: 0 auto
+  font-family: 'Inter', sans-serif
+  font-style: normal
+
+.main
+  padding-top: 40px
+  padding-bottom: 40px
+  text-align: center
+  &__title
+    font-weight: 300
+    font-size: 28px
+    line-height: 34px
+    color: rgba(255, 255, 255, 0.5)
+  &__text
+    font-weight: 400
+    font-size: 21px
+    line-height: 36px
+    color: rgba(255, 255, 255, 0.5)
+  &__input
+    margin: 0 auto
+    padding-bottom: 6px
+    margin-bottom: 36px
+
+    font-weight: 400
+    font-size: 20px
+    line-height: 36px
+    text-align: center
+    color: rgba(255, 255, 255, 0.7)
+
+    background: rgba(255, 255,255 , 0)
+    border-bottom: 1px solid rgba(255, 255, 255, 0.75)
+    &:focus
+      outline: none
+  &__error
+    font-weight: 400
+    font-size: 20px
+    line-height: 36px
+    text-align: center
+    color: #FFFFFF
+  &__error-info
+    margin-bottom: 57px
+
+    font-weight: 400
+    font-size: 12px
+    line-height: 15px
+    text-align: center
+    color: rgba(255, 255, 255, 0.75)
+  &__degree
+    font-weight: 700
+    font-size: 72px
+    line-height: 87px
+    color: #FFFFFF
+  &__weather-description
+    margin-bottom: 36px
+
+    font-weight: 400
+    font-size: 24px
+    line-height: 36px
+    color: rgba(255, 255, 255, 0.8)
+  &__change-city
+    margin: 0 auto
+
+    font-weight: 300
+    font-size: 17px
+    line-height: 28px
+    text-decoration-line: underline
+    color: rgba(255, 255, 255, 0.5)
+    background-color: rgba(255, 255, 255, 0)
+    &:hover
+      opacity: 0.85
+      cursor: pointer
+    &:active
+      transform: scale(1.04)
+      cursor: pointer
+  &__button
+    width: 140px
+    height: 48px
+
+    font-weight: 400
+    font-size: 20px
+    line-height: 36px
+    color: #4C01E0
+
+    border-radius: 8px
+    &:hover
+      opacity: 0.85
+    &:active
+      transform: scale(1.04)

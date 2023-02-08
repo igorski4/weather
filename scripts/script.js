@@ -9,7 +9,7 @@ window.navigator.geolocation.getCurrentPosition(
   async function () {
     try {
       const coordinates = await getCoordinatesByIP();
-      renderWeather(coordinates.lat, coordinates.lon);
+      renderWeather(coordinates.location.lat, coordinates.location.lng);
     } catch (err) {
       renderChangeCity();
     }

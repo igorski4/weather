@@ -9,6 +9,8 @@ export const renderChangeCity = () => {
   input.placeholder = "Type your city here";
   const button = createElement("button", "main__button");
   button.textContent = "Find";
-  button.addEventListener("click", handlerInputCity);
+  button.addEventListener("click", async function () {
+    await handlerInputCity();
+  });
   wrapper.prepend(input, button);
 };

@@ -17,5 +17,4 @@ export async function renderWeather(latitude, longitude) {
   degree.innerHTML = `${Math.round(weather.main.temp)}`;
   description.innerHTML = `Windy in ${city}`;
   wrapper.prepend(degree, description, changeCity);
-  console.log(weather);
 }

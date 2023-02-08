@@ -213,11 +213,18 @@ html {
   color: #FFFFFF;
 }
 .main__weather-description {
-  margin-bottom: 36px;
+  margin-bottom: 10px;
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
   color: rgba(255, 255, 255, 0.8);
+}
+.main__degree-stat {
+  margin-bottom: 36px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
 }
 .main__change-city {
   margin: 0 auto;
